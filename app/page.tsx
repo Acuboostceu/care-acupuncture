@@ -77,7 +77,7 @@ export default function Home() {
       </nav>
 
       {/* HERO */}
-      <section className="hero-pad" style={{ background: 'linear-gradient(180deg, #1C3328 0%, #2A4A38 60%, #3A5E48 100%)', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: '20px' }}>
+      <section className="hero-pad" style={{ background: 'linear-gradient(180deg, #111E18 0%, #1C3328 30%, #2A4A38 70%, #3D6650 100%)', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: '20px' }}>
         <span style={{ color: '#C4A84A', fontSize: '11px', letterSpacing: '0.15em', textTransform: 'uppercase' }}>Acupuncture & Eastern Medicine</span>
         <h1 className="serif hero-h1" style={{ color: '#FAF8F4', fontSize: '52px', fontWeight: 500, lineHeight: 1.1 }}>Care Acupuncture Clinic</h1>
         <p style={{ color: '#A8C4B4', fontSize: '15px', lineHeight: 1.8, maxWidth: '420px' }}>
@@ -89,15 +89,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* WAVE hero→about */}
-      <div style={{ background: '#3A5E48', marginBottom: '-1px' }}>
-        <svg viewBox="0 0 1440 56" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style={{ display: 'block', width: '100%', height: '56px' }}>
-          <path d="M0,20 C200,56 500,0 800,36 C1000,56 1200,10 1440,28 L1440,56 L0,56 Z" fill="#F2EFE8" />
-        </svg>
-      </div>
-
       {/* ABOUT */}
-      <section id="about" className="section-pad" style={{ background: 'linear-gradient(180deg, #F2EFE8 0%, #FAF8F4 100%)', paddingTop: '72px', paddingBottom: '0' }}>
+      <section id="about" className="section-pad" style={{ background: 'linear-gradient(180deg, #F0F5F2 0%, #FAF8F4 60%, #F5F2EB 100%)', paddingTop: '80px', paddingBottom: '80px' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
           <span style={tagStyle}>Who we are</span>
           <h2 className="serif" style={{ color: '#1A2420', fontSize: '32px', fontWeight: 500, marginBottom: '16px' }}>Healing rooted in<br />experience & care</h2>
@@ -110,7 +103,7 @@ export default function Home() {
               { name: 'Sally Kwon, L.Ac.', title: 'Founder & Lead Practitioner', bio: 'With over 20 years of clinical experience, Dr. Kwon has dedicated her career to Eastern medicine — including years serving as a clinical practitioner and educator at a university teaching hospital, training the next generation of acupuncturists.' },
               { name: 'Susan Park, L.Ac.', title: 'Practitioner', bio: 'Susan Park brings thoughtful, patient-centered care to every visit. Her approach integrates classical acupuncture techniques with a deep commitment to each patient\'s individual health journey.' },
             ].map(p => (
-              <div key={p.name} style={{ background: 'rgba(255,255,255,0.7)', borderRadius: '12px', padding: '28px', textAlign: 'left' }}>
+              <div key={p.name} style={{ background: 'rgba(255,255,255,0.75)', borderRadius: '12px', padding: '28px', textAlign: 'left' }}>
                 <div style={{ width: '36px', height: '3px', background: '#C4A84A', borderRadius: '2px', marginBottom: '16px' }} />
                 <h3 style={{ color: '#1A2420', fontSize: '15px', fontWeight: 500, marginBottom: '4px' }}>{p.name}</h3>
                 <p style={{ color: '#C4A84A', fontSize: '11px', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '12px' }}>{p.title}</p>
@@ -121,17 +114,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* WAVE about→services */}
-      <div style={{ background: '#FAF8F4' }}>
-        <svg viewBox="0 0 1440 56" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style={{ display: 'block', width: '100%', height: '56px' }}>
-          <path d="M0,40 C360,0 720,56 1080,28 C1260,14 1380,8 1440,0 L1440,56 L0,56 Z" fill="#FAF8F4" />
-        </svg>
-      </div>
-
       {/* SERVICES */}
-      <section id="services" className="section-pad" style={{ background: 'linear-gradient(180deg, #FAF8F4 0%, #EAE8E0 100%)', paddingTop: '48px', paddingBottom: '72px' }}>
+      <section id="services" className="section-pad" style={{ background: 'linear-gradient(180deg, #EAF0EC 0%, #D8E8DE 50%, #C8DEDA 100%)', paddingTop: '80px', paddingBottom: '80px' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
-          <span style={tagStyle}>What we offer</span>
+          <span style={{ ...tagStyle, background: '#D0E8DC', color: '#1C3328' }}>What we offer</span>
           <h2 className="serif" style={{ color: '#1A2420', fontSize: '32px', fontWeight: 500, marginBottom: '32px' }}>Our services</h2>
           <div className="grid-3">
             {[
@@ -140,52 +126,38 @@ export default function Home() {
               { name: 'Moxibustion', desc: 'Warming therapy using moxa to tonify qi and promote circulation' },
               { name: 'Cupping', desc: 'Myofascial release and circulation support through suction therapy' },
             ].map(m => (
-              <div key={m.name} style={{ background: 'rgba(255,255,255,0.9)', border: '0.5px solid #D8D4CC', borderRadius: '12px', padding: '24px', textAlign: 'left' }}>
+              <div key={m.name} style={{ background: 'rgba(255,255,255,0.7)', border: '0.5px solid #B8D4C4', borderRadius: '12px', padding: '24px', textAlign: 'left' }}>
                 <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#C4A84A', marginBottom: '14px' }} />
                 <h3 style={{ color: '#1A2420', fontSize: '14px', fontWeight: 500, marginBottom: '6px' }}>{m.name}</h3>
-                <p style={{ color: '#7A8E84', fontSize: '12px', lineHeight: 1.6 }}>{m.desc}</p>
+                <p style={{ color: '#4A6858', fontSize: '12px', lineHeight: 1.6 }}>{m.desc}</p>
               </div>
             ))}
-            <div className="herbal-span" style={{ background: 'rgba(255,255,255,0.9)', border: '0.5px solid #D8D4CC', borderRadius: '12px', padding: '24px', textAlign: 'left' }}>
+            <div className="herbal-span" style={{ background: 'rgba(255,255,255,0.7)', border: '0.5px solid #B8D4C4', borderRadius: '12px', padding: '24px', textAlign: 'left' }}>
               <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#C4A84A', marginBottom: '14px' }} />
               <h3 style={{ color: '#1A2420', fontSize: '14px', fontWeight: 500, marginBottom: '6px' }}>Herbal Medicine</h3>
-              <p style={{ color: '#7A8E84', fontSize: '12px', lineHeight: 1.6 }}>Custom formulas tailored to your constitution and condition</p>
+              <p style={{ color: '#4A6858', fontSize: '12px', lineHeight: 1.6 }}>Custom formulas tailored to your constitution and condition</p>
               <p style={{ color: '#C4A84A', fontSize: '11px', marginTop: '8px' }}>Available as Powder · Capsule · Decoction</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* WAVE services→location */}
-      <div style={{ background: '#EAE8E0' }}>
-        <svg viewBox="0 0 1440 56" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style={{ display: 'block', width: '100%', height: '56px' }}>
-          <path d="M0,20 C200,56 500,0 800,36 C1000,56 1200,10 1440,28 L1440,56 L0,56 Z" fill="#DDE8E2" />
-        </svg>
-      </div>
-
       {/* LOCATION */}
-      <section id="location" className="section-pad" style={{ background: 'linear-gradient(180deg, #DDE8E2 0%, #C8D8D0 100%)', paddingTop: '72px', paddingBottom: '72px' }}>
+      <section id="location" className="section-pad" style={{ background: 'linear-gradient(180deg, #1C3328 0%, #243D2E 100%)', paddingTop: '80px', paddingBottom: '80px' }}>
         <div style={{ maxWidth: '600px', margin: '0 auto', textAlign: 'center' }}>
-          <span style={tagStyle}>Find us</span>
-          <div style={{ background: 'rgba(255,255,255,0.8)', border: '0.5px solid #B8CCC4', borderRadius: '12px', padding: '36px', textAlign: 'left', marginTop: '8px' }}>
-            <h3 style={{ color: '#1A2420', fontSize: '18px', fontWeight: 500, marginBottom: '16px' }}>Orange</h3>
-            <p style={{ color: '#4A5E54', fontSize: '13px', lineHeight: 1.8, marginBottom: '16px' }}>
+          <span style={{ ...tagStyle, background: '#2A4A38', color: '#C4A84A' }}>Find us</span>
+          <div style={{ background: 'rgba(255,255,255,0.07)', border: '0.5px solid rgba(255,255,255,0.15)', borderRadius: '12px', padding: '36px', textAlign: 'left', marginTop: '8px' }}>
+            <h3 style={{ color: '#FAF8F4', fontSize: '18px', fontWeight: 500, marginBottom: '16px' }}>Orange</h3>
+            <p style={{ color: '#A8C4B4', fontSize: '13px', lineHeight: 1.8, marginBottom: '16px' }}>
               1516 E Lincoln Ave<br />Orange, CA 92865
             </p>
-            <a href="tel:7149745588" style={{ color: '#1C3328', fontSize: '16px', fontWeight: 500, textDecoration: 'none' }}>714-974-5588</a>
+            <a href="tel:7149745588" style={{ color: '#C4A84A', fontSize: '16px', fontWeight: 500, textDecoration: 'none' }}>714-974-5588</a>
           </div>
         </div>
       </section>
 
-      {/* WAVE location→contact */}
-      <div style={{ background: '#C8D8D0' }}>
-        <svg viewBox="0 0 1440 56" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style={{ display: 'block', width: '100%', height: '56px' }}>
-          <path d="M0,28 C300,56 600,0 900,36 C1100,60 1300,10 1440,20 L1440,56 L0,56 Z" fill="#2A4A38" />
-        </svg>
-      </div>
-
       {/* CONTACT */}
-      <section id="contact" className="section-pad" style={{ background: 'linear-gradient(180deg, #2A4A38 0%, #1C3328 50%, #111E18 100%)', paddingTop: '72px', paddingBottom: '72px' }}>
+      <section id="contact" className="section-pad" style={{ background: 'linear-gradient(180deg, #243D2E 0%, #111E18 100%)', paddingTop: '72px', paddingBottom: '72px' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <div className="contact-grid">
             <div>
