@@ -157,8 +157,8 @@ export default function Home() {
               <h2 className="serif" style={{ color: '#FAF8F4', fontSize: '32px', fontWeight: 500, marginBottom: '16px', lineHeight: 1.2 }}>Send us a message</h2>
               <p style={{ color: '#A8C4B4', fontSize: '14px', lineHeight: 1.8, marginBottom: '24px' }}>We&apos;ll get back to you as soon as possible.</p>
               <div style={{ display: 'flex', flexDirection: 'column' as const, gap: '8px' }}>
-                <a href="tel:7149745588" style={{ color: '#C4A84A', fontSize: '13px', textDecoration: 'none' }}>714-974-5588</a>
-                <p style={{ color: '#A8C4B4', fontSize: '13px', lineHeight: 1.7 }}>1516 E Lincoln Ave<br />Orange, CA 92865</p>
+                <a href="tel:7149745588" style={{ color: '#C4A84A', fontSize: '16px', fontWeight: 500, textDecoration: 'none' }}>714-974-5588</a>
+                <p style={{ color: '#A8C4B4', fontSize: '15px', lineHeight: 1.8 }}>1516 E Lincoln Ave<br />Orange, CA 92865</p>
               </div>
             </div>
 
