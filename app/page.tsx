@@ -103,7 +103,7 @@ export default function Home() {
 
           <div className="grid-2" style={{ marginBottom: '20px' }}>
             {[
-              { name: 'Sally Kwon, L.Ac.', title: 'Founder & Lead Practitioner', bio: 'With over 20 years of clinical experience, Dr. Kwon has dedicated her career to Eastern medicine — including years serving as a clinical practitioner and educator at a university teaching hospital, training the next generation of acupuncturists.' },
+              { name: 'Sally Kwon, L.Ac., Ph.D.', title: 'Founder & Lead Practitioner', bio: 'With over 20 years of clinical experience, Dr. Kwon has dedicated her career to Eastern medicine — including years serving as a clinical practitioner and educator at a university teaching hospital, training the next generation of acupuncturists.' },
               { name: 'Susan Park, L.Ac.', title: 'Practitioner', bio: 'Susan Park brings thoughtful, patient-centered care to every visit. Her approach integrates classical acupuncture techniques with a deep commitment to each patient\'s individual health journey.' },
             ].map(p => (
               <div key={p.name} style={{ background: 'rgba(255,255,255,0.75)', borderRadius: '12px', padding: '28px', textAlign: 'left' }}>
