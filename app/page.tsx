@@ -69,7 +69,7 @@ export default function Home() {
       <nav className="nav">
         <a href="#" className="nav-logo">Care <span>Acupuncture</span></a>
         <div className="nav-links">
-          {['About', 'Services', 'Location', 'Contact'].map(item => (
+          {['About', 'Services', 'Contact'].map(item => (
             <a key={item} href={`#${item.toLowerCase()}`} style={{ color: '#A8C4B4', fontSize: '12px', letterSpacing: '0.06em', textDecoration: 'none', textTransform: 'uppercase' }}>{item}</a>
           ))}
         </div>
@@ -142,29 +142,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* LOCATION */}
-      <section id="location" className="section-pad" style={{ background: 'linear-gradient(180deg, #1C3328 0%, #243D2E 100%)', paddingTop: '80px', paddingBottom: '80px' }}>
-        <div style={{ maxWidth: '600px', margin: '0 auto', textAlign: 'center' }}>
-          <span style={{ ...tagStyle, background: '#2A4A38', color: '#C4A84A' }}>Find us</span>
-          <div style={{ background: 'rgba(255,255,255,0.07)', border: '0.5px solid rgba(255,255,255,0.15)', borderRadius: '12px', padding: '36px', textAlign: 'left', marginTop: '8px' }}>
-            <h3 style={{ color: '#FAF8F4', fontSize: '18px', fontWeight: 500, marginBottom: '16px' }}>Orange</h3>
-            <p style={{ color: '#A8C4B4', fontSize: '13px', lineHeight: 1.8, marginBottom: '16px' }}>
-              1516 E Lincoln Ave<br />Orange, CA 92865
-            </p>
-            <a href="tel:7149745588" style={{ color: '#C4A84A', fontSize: '16px', fontWeight: 500, textDecoration: 'none' }}>714-974-5588</a>
-          </div>
-        </div>
-      </section>
-
       {/* CONTACT */}
-      <section id="contact" className="section-pad" style={{ background: 'linear-gradient(180deg, #243D2E 0%, #111E18 100%)', paddingTop: '72px', paddingBottom: '72px' }}>
+      <section id="contact" className="section-pad" style={{ background: 'linear-gradient(180deg, #C8DEDA 0%, #1C3328 25%, #111E18 100%)', paddingTop: '80px', paddingBottom: '72px' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <div className="contact-grid">
             <div>
-              <span style={{ display: 'inline-block', background: '#1C3328', color: '#C4A84A', fontSize: '11px', letterSpacing: '0.1em', textTransform: 'uppercase' as const, padding: '3px 12px', borderRadius: '20px', marginBottom: '16px' }}>Get in touch</span>
+              <span style={{ display: 'inline-block', background: '#2A4A38', color: '#C4A84A', fontSize: '11px', letterSpacing: '0.1em', textTransform: 'uppercase' as const, padding: '3px 12px', borderRadius: '20px', marginBottom: '16px' }}>Get in touch</span>
               <h2 className="serif" style={{ color: '#FAF8F4', fontSize: '32px', fontWeight: 500, marginBottom: '16px', lineHeight: 1.2 }}>Send us a message</h2>
               <p style={{ color: '#A8C4B4', fontSize: '14px', lineHeight: 1.8, marginBottom: '24px' }}>We&apos;ll get back to you as soon as possible.</p>
-              <a href="tel:7149745588" style={{ color: '#C4A84A', fontSize: '13px', textDecoration: 'none' }}>Orange · 714-974-5588</a>
+              <div style={{ display: 'flex', flexDirection: 'column' as const, gap: '8px' }}>
+                <a href="tel:7149745588" style={{ color: '#C4A84A', fontSize: '13px', textDecoration: 'none' }}>714-974-5588</a>
+                <p style={{ color: '#A8C4B4', fontSize: '13px', lineHeight: 1.7 }}>1516 E Lincoln Ave<br />Orange, CA 92865</p>
+              </div>
             </div>
 
             <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column' as const, gap: '16px' }}>
