@@ -90,7 +90,7 @@ export default function Home() {
       </section>
 
       {/* HERO→ABOUT gradient bridge */}
-      <div style={{ height: '80px', background: 'linear-gradient(180deg, #4A7058 0%, #F0F5F2 100%)' }} />
+      <div style={{ height: '140px', background: 'linear-gradient(180deg, #4A7058 0%, #618870 12%, #84A890 28%, #AAC4B4 46%, #CCDDD4 63%, #E0EDE8 78%, #EDF4F0 90%, #F0F5F2 100%)' }} />
 
       {/* ABOUT */}
       <section id="about" className="section-pad" style={{ background: 'linear-gradient(180deg, #F0F5F2 0%, #FAF8F4 60%, #F0EDE5 100%)', paddingTop: '40px', paddingBottom: '80px' }}>
@@ -146,7 +146,7 @@ export default function Home() {
       </section>
 
       {/* SERVICES→CONTACT gradient bridge */}
-      <div style={{ height: '100px', background: 'linear-gradient(180deg, #C8DEDA 0%, #2A4A38 100%)' }} />
+      <div style={{ height: '140px', background: 'linear-gradient(180deg, #C8DEDA 0%, #B0CEC8 12%, #8AADA4 28%, #608878 46%, #426858 63%, #304E3C 78%, #2C4838 90%, #2A4A38 100%)' }} />
 
       {/* CONTACT */}
       <section id="contact" className="section-pad" style={{ background: 'linear-gradient(180deg, #2A4A38 0%, #1C3328 40%, #111E18 100%)', paddingTop: '72px', paddingBottom: '72px' }}>
