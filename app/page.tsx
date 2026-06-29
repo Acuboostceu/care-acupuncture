@@ -159,6 +159,10 @@ export default function Home() {
               <div style={{ display: 'flex', flexDirection: 'column' as const, gap: '8px' }}>
                 <a href="tel:7149745588" style={{ color: '#C4A84A', fontSize: '16px', fontWeight: 500, textDecoration: 'none' }}>714-974-5588</a>
                 <p style={{ color: '#A8C4B4', fontSize: '15px', lineHeight: 1.8 }}>1516 E Lincoln Ave<br />Orange, CA 92865</p>
+                <a href="https://www.yelp.com/biz/care-acupuncture-orange" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', color: '#A8C4B4', fontSize: '13px', textDecoration: 'none', marginTop: '4px' }}>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="#C4A84A"><path d="M20.16 12.73l-4.38-1.24a.5.5 0 0 0-.53.73l2.5 3.84a.5.5 0 0 0 .87-.08c.37-.9.55-1.85.55-2.82 0-.16-.01-.3-.01-.43zm-1.37 5.1l-3.81-2.56a.5.5 0 0 0-.73.53l.95 4.43a.5.5 0 0 0 .84.24 9.1 9.1 0 0 0 2.84-2.77.5.5 0 0 0-.09-.87zm-7.3 2.93l.62-4.49a.5.5 0 0 0-.83-.46l-3.43 2.96a.5.5 0 0 0 .14.86 9.1 9.1 0 0 0 3.5.13zm-5.2-5.2a.5.5 0 0 0 .5-.18l2.7-3.68a.5.5 0 0 0-.48-.78l-4.44.72a.5.5 0 0 0-.32.8 9.1 9.1 0 0 0 2.04 3.12zm4.53-11.3C6.06 4.26 3 7.72 3 11.9c0 .28.01.55.04.82l4.14-1.37a.5.5 0 0 0 .17-.86L4.1 7.93a.5.5 0 0 1 .58-.81l3.4 2.3V4.76a.5.5 0 0 1 .86-.35l.98.98V3.26z"/></svg>
+                  View us on Yelp
+                </a>
               </div>
             </div>
 
