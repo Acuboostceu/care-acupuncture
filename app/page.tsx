@@ -77,7 +77,7 @@ export default function Home() {
       </nav>
 
       {/* HERO */}
-      <section className="hero-pad" style={{ background: 'linear-gradient(180deg, #111E18 0%, #1C3328 30%, #2A4A38 70%, #3D6650 100%)', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: '20px' }}>
+      <section className="hero-pad" style={{ background: 'linear-gradient(180deg, #111E18 0%, #1C3328 30%, #2A4A38 70%, #4A7058 100%)', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: '20px' }}>
         <span style={{ color: '#C4A84A', fontSize: '11px', letterSpacing: '0.15em', textTransform: 'uppercase' }}>Acupuncture & Eastern Medicine</span>
         <h1 className="serif hero-h1" style={{ color: '#FAF8F4', fontSize: '52px', fontWeight: 500, lineHeight: 1.1 }}>Care Acupuncture Clinic</h1>
         <p style={{ color: '#A8C4B4', fontSize: '15px', lineHeight: 1.8, maxWidth: '420px' }}>
@@ -89,8 +89,11 @@ export default function Home() {
         </div>
       </section>
 
+      {/* HERO→ABOUT gradient bridge */}
+      <div style={{ height: '80px', background: 'linear-gradient(180deg, #4A7058 0%, #F0F5F2 100%)' }} />
+
       {/* ABOUT */}
-      <section id="about" className="section-pad" style={{ background: 'linear-gradient(180deg, #F0F5F2 0%, #FAF8F4 60%, #F5F2EB 100%)', paddingTop: '80px', paddingBottom: '80px' }}>
+      <section id="about" className="section-pad" style={{ background: 'linear-gradient(180deg, #F0F5F2 0%, #FAF8F4 60%, #F0EDE5 100%)', paddingTop: '40px', paddingBottom: '80px' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
           <span style={tagStyle}>Who we are</span>
           <h2 className="serif" style={{ color: '#1A2420', fontSize: '32px', fontWeight: 500, marginBottom: '16px' }}>Healing rooted in<br />experience & care</h2>
@@ -142,8 +145,11 @@ export default function Home() {
         </div>
       </section>
 
+      {/* SERVICES→CONTACT gradient bridge */}
+      <div style={{ height: '100px', background: 'linear-gradient(180deg, #C8DEDA 0%, #2A4A38 100%)' }} />
+
       {/* CONTACT */}
-      <section id="contact" className="section-pad" style={{ background: 'linear-gradient(180deg, #C8DEDA 0%, #1C3328 25%, #111E18 100%)', paddingTop: '80px', paddingBottom: '72px' }}>
+      <section id="contact" className="section-pad" style={{ background: 'linear-gradient(180deg, #2A4A38 0%, #1C3328 40%, #111E18 100%)', paddingTop: '72px', paddingBottom: '72px' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <div className="contact-grid">
             <div>
